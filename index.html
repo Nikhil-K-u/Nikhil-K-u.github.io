@@ -1,168 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta id="" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikhil Kumar</title>
-    <link rel='stylesheet' href='main.css'>
-    <!-- <link rel="shortcut icon" href="resources/favicon.webp" type="image/x-icon"> -->
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="I am a computer science student at Siksha 'O' Anusandhan University, with a passion for cloud technology and tech in trend. ">
-    <meta name="author" content="Nikhil Kumar">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil Kumar – Software Developer & Consultant</title>
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-    <div class="container">
-        <figure>
-            <!-- <img src="https://s2sharpit.me/_next/image?url=%2Fs2sharpit.jpeg&w=828&q=100" alt="my pic" class=""> -->
-            <h1>Nikhil <br> <span>Kumar</span> </h1>
-        </figure>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <!-- Loading Spinner -->
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">NK</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu" id="mobileMenu">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-    <section id="about">
-        <h2>About</h2>
-        <div class="wrapper">
-            <p>
-                I am a computer science student at Siksha 'O' Anusandhan University, with a passion for cloud technology
-                and tech in trend. I have completed multiple courses and certifications in Java, Azure AI Fundamentals, and
-                Embracing Change, demonstrating my reliability, problem-solving, and object-oriented programming skills.
-                <br><br>
-                I am eager to learn from real-world projects and challenges, and to apply my knowledge and skills to create
-                value and impact. I have participated in several hackathons and competitions and developed and deployed AI
-                cognitive service and NLP solutions.
-            </p>
-        </div>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="wrapper">
-            <div>Azure</div>
-            <div>Java</div>
-            <div>Cloud Computing</div>
-            <div>Reliability</div>
-            <div>English</div>
-            <div>Personal Development</div>
-            <div>Object-Oriented Programming (OOP)</div>
-            <div>Project Management</div>
-            <div>HTML & CSS</div>
-            <div>Problem Solving</div>
-            <div>Computer Science</div>
-        </div>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="wrapper">
-            <div class="pro">
-                <div class="pro-title">Jal Dristi</div>
-                <div class="pro-detail">
-                    App build using Python, AI Embedding, Web Scraping. <br>
-                    <!-- <br>
-                    <p>JalDristi, a state-of-the-art Water Crowdsourcing and Management Platform! Our mission is to provide a comprehensive
-                    solution for crowd-sourcing water-related problems, analyzing geo-referenced images, and efficiently managing
-                    water-related issues.</p> -->
-                </div>
-                <a target="_blank" href="https://github.com/hacktoberfest-codex/JalDrishti" class="pro-link">LINK</a>
-            </div>
-            <div class="pro">
-                <div class="pro-title">PDF Solve</div>
-                <div class="pro-detail">
-                    App build using AI Embedding, Fiass (Memory Management), OpenAI Embeddings <br>
-                    <!-- <br>
-                    <p>It smoothen the process keeping tracks of book.</p> -->
-                </div>
-                <a target="_blank" href="https://github.com/Nikhil-K-u/pdfSol" class="pro-link">LINK</a>
-            </div>
-            <div class="pro">
-                <div class="pro-title">Qdrant PDF Solve</div>
-                <div class="pro-detail">
-                    App built using AI Embedding, Fiass (Memory Management), OpenAI Embeddings and Qdrant.<br>
-                    <!-- <br>
-                    <p>It help user and hospital to keep track of digital prescription for faster
-                    </p> -->
-                </div>
-                <a target="_blank" href="https://github.com/Nikhil-K-u/Llm_Qdrant" class="pro-link">LINK</a>
-            </div>
-        </div>
-    </section>
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="wrapper">
-            <div class="cert">
-                <div class="cert-title">Nasscom Java Excellence Certificate</div>
-                <div class="cert-detail">
-                    Issued by Coding Ninjas
-                </div>
-            </div>
-            <div class="cert">
-                <div class="cert-title">Embracing Change</div>
-                <div class="cert-detail">
-                    Issued by Harappa
-                </div>
-            </div>
-            <div class="cert">
-                <div class="cert-title">Microsoft Certified: Azure AI Fundamentals</div>
-                <div class="cert-detail">
-                    Microsoft
-                </div>
-            </div>
-            <div class="cert">
-                <div class="cert-title">Future ready talent virtual internship</div>
-                <div class="cert-detail">
-                    Microsoft
-                </div>
-            </div>
-            <div class="cert">
-                <div class="cert-title">Google Cloud Essentials</div>
-                <div class="cert-detail">
-                    Google Cloud Skills Boost
-                </div>
-            </div>
-            <div class="cert">
-                <div class="cert-title">Introduction to Cybersecurity</div>
-                <div class="cert-detail">
-                    Cisco
-                </div>
-            </div>
-            <div class="cert">
-                <div class="cert-title">Data Science Orientation</div>
-                <div class="cert-detail">
-                    Coursera
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="wrapper">
-            <div class="contact-info">
-                <div class="info-title">Email</div>
-                <div class="info-detail">nk605326@gmail.com</div>
-            </div>
-            <div class="contact-info">
-                <div class="info-title">Phone</div>
-                <div class="info-detail">+91 7327883029</div>
-            </div>
-            <div class="contact-info">
-                <div class="info-title">LinkedIn</div>
-                <div class="info-detail">
-                    <a
-                        href="https://www.linkedin.com/in/nikhil-kumar-039084193">linkedin.com/in/nikhil-kumar-039084193</a>
-                </div>
-            </div>
-        </div>
-    <section>
+  </nav>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"><div class="particles" id="particles"></div></div>
+    <div class="hero-content">
+      <h1 class="hero-title" id="heroTitle">Nikhil Kumar</h1>
+      <p class="hero-subtitle">
+        <span class="typewriter" id="typewriter">Software Developer & Consultant</span>
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Nikhil-K-u/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nkupa/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://nikhil-k-u.github.io/" target="_blank" class="social-link"><i class="fas fa-globe"></i></a>
+        <a href="https://learn.microsoft.com/en-us/users/nkupa/transcript/763xptelke5k4p0" target="_blank" class="social-link"><i class="fab fa-microsoft"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2 class="section-title reveal">About Me</h2>
+    <div class="about-content">
+      <div class="about-image reveal"><div class="profile-img">NK</div></div>
+      <div class="about-text reveal">
+        <p>Hello! I'm Nikhil Kumar, a passionate Software Developer currently working at <strong>KloudGin Inc.</strong> in Hyderabad. I specialize in Enterprise Asset Management (EAM) and Field Service Management (FSM) platform solutions.</p>
+        <p>With a strong foundation in Computer Science Engineering and hands-on experience in cloud-native SaaS architectures, I enjoy creating innovative solutions that solve real-world problems. My expertise spans across Python, Java, AI/ML, and cloud technologies.</p>
+        <p>I'm particularly interested in AI-powered applications and have worked on projects involving natural language processing, computer vision, and data analysis.</p>
+
+        <div class="stats">
+          <div class="stat"><span class="stat-number">2+</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Projects Completed</span></div>
+          <div class="stat"><span class="stat-number">3+</span><span class="stat-label">Certifications</span></div>
+          <div class="stat"><span class="stat-number">8.5</span><span class="stat-label">CGPA</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2 class="section-title reveal">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Aug 2025 – Present</div>
+          <h3 class="timeline-title">Trainee Engineer</h3>
+          <div class="timeline-company">KloudGin Inc. • Hyderabad, India</div>
+          <div class="timeline-description">
+            <p>Engaged in product customization and engineering to develop innovative prototypes tailored to client needs. Integrated ESRI technology into web applications and collaborated with cross-functional teams to enhance project outcomes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Aug 2024 – Jul 2025</div>
+          <h3 class="timeline-title">Intern</h3>
+          <div class="timeline-company">KloudGin Inc. • Hyderabad, India</div>
+          <div class="timeline-description">
+            <p>Assisted in the development of EAM/FSM product modules, built demo workflows, and supported solution engineering teams. Earned internal certification as a <strong>KloudGin Platform Developer</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Feb 2024 – May 2024</div>
+          <h3 class="timeline-title">Cloud and Digital Launchpad Trainee</h3>
+          <div class="timeline-company">PwC • Remote</div>
+          <div class="timeline-description">
+            <p>Completed PwC’s digital transformation program, mastering Java (98/100), RDBMS (91/100), DevOps (86/100), and Web Development (81/100).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">JalDristi</h3>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Nikhil-K-u/jaldristi" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Built a crowd-powered tool to identify and classify water-related issues using AI. Scraped social media posts, extracted image/text content, and used Azure Cognitive Services for sentiment analysis. Used OpenAI API to detect anomalies and assign issue categories automatically.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Selenium</span>
+                    <span class="tech-tag">Scrapy</span>
+                    <span class="tech-tag">Azure</span>
+                    <span class="tech-tag">OpenAI</span>
+                </div>
+            </div>
+            
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">PdfSol + Qdrant</h3>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Nikhil-K-u/pdfSol" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">
+                    Created a chatbot interface to extract contextual answers from uploaded PDF documents. Used Qdrant as vector DB, and LangChain for chunking, embedding, and retrieval.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">Streamlit</span>
+                    <span class="tech-tag">Qdrant</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title reveal">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category reveal">
+                <h3>Programming Languages</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">Java</span>
+                    <span class="skill-item">C</span>
+                </div>
+            </div>
+            
+            <div class="skill-category reveal">
+                <h3>Frameworks &amp; Libraries</h3>
+                <div class="skill-list">
+                    <span class="skill-item">LangChain</span>
+                    <span class="skill-item">Streamlit</span>
+                    <span class="skill-item">Pandas</span>
+                    <span class="skill-item">NumPy</span>
+                    <span class="skill-item">Selenium</span>
+                    <span class="skill-item">Scrapy</span>
+                </div>
+            </div>
+            
+            <div class="skill-category reveal">
+                <h3>Databases</h3>
+                <div class="skill-list">
+                    <span class="skill-item">MongoDB</span>
+                    <span class="skill-item">Oracle SQL</span>
+                    <span class="skill-item">MySQL</span>
+                </div>
+            </div>
+            
+            <div class="skill-category reveal">
+                <h3>Tools &amp; Environments</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">Linux</span>
+                    <span class="skill-item">VS Code</span>
+                    <span class="skill-item">Jupyter Notebook</span>
+                    <span class="skill-item">Postman</span>
+                    <span class="skill-item">SIEM Tools</span>
+                </div>
+            </div>
+            
+            <div class="skill-category reveal">
+                <h3>Cloud Platforms</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Microsoft Azure</span>
+                    <span class="skill-item">Google Cloud Platform</span>
+                </div>
+            </div>
+            
+            <div class="skill-category reveal">
+                <h3>Relevant Coursework</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Data Structures &amp; Algorithms</span>
+                    <span class="skill-item">Database Management Systems</span>
+                    <span class="skill-item">Operating Systems</span>
+                    <span class="skill-item">Computer Networks</span>
+                    <span class="skill-item">Cybersecurity</span>
+                    <span class="skill-item">Cloud Computing</span>
+                    <span class="skill-item">AI/ML</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="education-grid">
+            <div class="education-card reveal">
+                <div class="education-header">
+                    <div>
+                        <h3 class="education-degree">B.Tech in Computer Science Engineering</h3>
+                        <p class="education-institution">Siksha 'O' Anusandhan Deemed to be University</p>
+                    </div>
+                    <div class="education-date">Jun. 2025</div>
+                </div>
+                <p class="education-grade">CGPA: 8.5 • Bhubaneswar, Odisha, India</p>
+            </div>
+            
+            <div class="education-card reveal">
+                <div class="education-header">
+                    <div>
+                        <h3 class="education-degree">Senior Secondary (Class XII)</h3>
+                        <p class="education-institution">Sunbeam Academy - CBSE Board</p>
+                    </div>
+                    <div class="education-date">2021</div>
+                </div>
+                <p class="education-grade">90.8% • Varanasi, India</p>
+            </div>
+            
+            <div class="education-card reveal">
+                <div class="education-header">
+                    <div>
+                        <h3 class="education-degree">Secondary (Class X)</h3>
+                        <p class="education-institution">Sunbeam Academy - CBSE Board</p>
+                    </div>
+                    <div class="education-date">2019</div>
+                </div>
+                <p class="education-grade">93% • Varanasi, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h2 class="section-title reveal">Licenses &amp; Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card reveal">
+                <div class="cert-header">
+                    <div>
+                        <h3 class="cert-title">Google Cybersecurity Specialization</h3>
+                        <p class="cert-issuer">Google</p>
+                    </div>
+                    <a href="https://www.credly.com/badges/0abbe0db-40a7-4a04-bc3a-c2db873c16d0/public_url" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <p class="cert-description">
+                    Completed Google Cybersecurity Professional Certificate (8-course specialization) with average score of 94%+, including hands-on training in Linux, SQL, Threat Detection, Incident Response, Network Security, Risk Management, and Python-based automation.
+                </p>
+            </div>
+            
+            <div class="cert-card reveal">
+                <div class="cert-header">
+                    <div>
+                        <h3 class="cert-title">Microsoft Certified: AI Fundamentals</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                    </div>
+                    <a href="https://www.credly.com/badges/f715bdc3-af16-4e83-b84f-68dc9bbf9025/public_url" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <p class="cert-description">
+                    Learned core AI and ML concepts, responsible AI, and Azure-based implementation strategies.
+                </p>
+            </div>
+            
+            <div class="cert-card reveal">
+                <div class="cert-header">
+                    <div>
+                        <h3 class="cert-title">Microsoft Certified: Security, Compliance, and Identity Fundamentals</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                    </div>
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/Nkupa/4A04ABBB658E66C2?sharingId=7B5F822BEF56BFF8" target="_blank" class="cert-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <p class="cert-description">
+                    Understood SCI principles and identity protection using Microsoft 365 and Azure environments.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info reveal">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>nk605326@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Phone</h4>
+                        <p>+91 7327883029</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Location</h4>
+                        <p>India</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h4>Portfolio</h4>
+                        <p><a href="https://nikhil-k-u.github.io/" target="_blank">nikhil-k-u.github.io</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder=" " required>
+                    <label class="form-label" for="name">Your Name</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder=" " required>
+                    <label class="form-label" for="email">Your Email</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" placeholder=" " required>
+                    <label class="form-label" for="subject">Subject</label>
+                </div>
+                
+                <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder=" " required></textarea>
+                    <label class="form-label" for="message">Your Message</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full-width">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+  <script src="script.js"></script>
 </body>
-
 </html>
