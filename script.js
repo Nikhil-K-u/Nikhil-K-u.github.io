@@ -86,7 +86,7 @@
 
         // Typewriter effect
         function typewriterEffect() {
-            const text = "Software Developer & Consultant";
+            const text = "Software Developer";
             const element = document.getElementById('typewriter');
             let index = 0;
             
